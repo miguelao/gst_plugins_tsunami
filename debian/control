@@ -1,0 +1,51 @@
+Source: mosami-gst-plugins-tsunami
+Priority: extra
+Maintainer: Miguel Casas-Sanchez <miguel.casas-sanchez@alcatel-lucent.com>
+Build-Depends: debhelper (>= 7), 
+  cdbs, 
+  autotools-dev, 
+  libtool, 
+  pkg-config, 
+  libssl-dev, 
+  mosami-gstreamer, 
+  mosami-gst-plugins-base, 
+  mosami-gst-plugins-good, 
+  mosami-gst-ffmpeg, 
+  mosami-opencv-dev, 
+  mosami-ipp, 
+  mosami-ipp-samples-dev,
+  libglew1.5-dev, 
+  libcurl3-dev, 
+  google-breakpad-dev, 
+  libglib2.0-dev, 
+  libxml2-dev,
+  liborc-0.4-dev,
+  mosami-boost-m4,
+  libboost-all-dev
+Standards-Version: 3.8.3
+Section: libs
+Homepage:
+
+Package: mosami-gst-plugins-tsunami-dbg
+Section: debug
+Architecture: any
+Depends: mosami-gst-plugins-tsunami (= ${binary:Version})
+Description: Gstreamer Tsunami (unstable) plugin  (debugging symbols)
+
+Package: mosami-gst-plugins-tsunami-dev
+Section: libdevel
+Architecture: any
+Depends: mosami-gst-plugins-tsunami (= ${binary:Version})
+Description: Gstreamer Tsunami (unstable) plugin (development files)
+
+Package: mosami-gst-plugins-tsunami
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, mosami-ipp
+Description: Gstreamer Tsunami (unstable) plugin (shared library)  
+
+Package: mosami-gst-plugins-tsunami-breakpad
+Section: debug
+Architecture: any
+Depends: google-breakpad-dev
+Description: Gstreamer Tsunami (unstable) plugin (breakpad)

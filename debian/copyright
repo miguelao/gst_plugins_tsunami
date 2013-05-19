@@ -1,0 +1,24 @@
+This work was packaged for Debian by:
+
+    Tom Janiszewski <Tom.Janiszewski@alcatel-lucent.com> on Mon, 25 Oct 2010 21:34:35 +0200
+
+Upstream Author(s):
+    
+    Tom Janiszewski <Tom.Janiszewski@alcatel-lucent.com> on Mon, 25 Oct 2010 21:34:35 +0200
+
+Copyright:
+
+    Copyright (C) 2010 Alcatel-Lucent
+
+License:
+
+    ALU
+
+The Debian packaging is:
+
+    Copyright (C) 2010 Tom Janiszewski <Tom.Janiszewski@alcatel-lucent.com>
+
+
+and is licensed under the GPL version 3, 
+see `/usr/share/common-licenses/GPL-3'.
+

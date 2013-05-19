@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_DH_SHLIBDEPS_ARGS := -l $(CURDIR)/debian/tmp/usr/local/lib/gstreamer-0.10 --dpkg-shlibdeps-params=--ignore-missing-info
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
+DEB_DH_STRIP_ARGS := --dbg-package=mosami-gst-plugins-tsunami-dbg

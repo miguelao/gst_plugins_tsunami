@@ -1,0 +1,4 @@
+PKG_NAME = mosami-gst-plugins-tsunami
+
+include $(CURDIR)/../common/make_debian
+
